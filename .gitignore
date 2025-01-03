@@ -1,0 +1,44 @@
+# Compiled files and executables
+target/
+debug/
+release/
+
+# Cargo build output
+.cargo/build/
+
+# Cargo check output
+.cargo/check/
+
+# Cargo test output
+.cargo/test/
+
+# Cargo benchmarks output
+.cargo/bench/
+
+# Cargo coverage output
+.cargo/coverage/
+
+# Cargo packaging output
+.cargo/pkg/
+
+# Cargo registry index
+.cargo/registry/index/
+
+# Cargo git dependencies
+.cargo/git/
+
+# Cargo metadata
+.cargo/config
+.cargo/registry/
+
+# Cargo lock
+.cargo/lock
+
+# IDE-specific files
+*.iml
+*.idea
+*.vscode/
+
+# Editor temporary files
+*.swp
+*.swo
