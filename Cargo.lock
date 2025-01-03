@@ -13,6 +13,7 @@ name = "lithorust"
 version = "0.1.0"
 dependencies = [
  "ndarray",
+ "plotpy",
 ]
 
 [[package]]
@@ -65,6 +66,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
 dependencies = [
  "autocfg",
+]
+
+[[package]]
+name = "plotpy"
+version = "1.11.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b4b84d601c212c3d43f2a500f18df9ba9d0ceb096854b265907bf5d3c6dd0a49"
+dependencies = [
+ "num-traits",
 ]
 
 [[package]]

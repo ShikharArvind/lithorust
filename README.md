@@ -9,7 +9,7 @@ https://nbviewer.org/github/pierremifasol/Lithography-Simulation/blob/master/Lit
 TODO
 
 ## Goals / TODO
-- [ ] Implement basic mask 1-D transmission fuction
+- [x] Implement basic mask 1-D transmission fuction
 - [ ] Calculate the Fourier transform of the mask fuction
 - [ ] Write usage documentation when the project is remotely ready. 
 
