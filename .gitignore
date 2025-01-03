@@ -36,6 +36,9 @@ release/
 *.idea
 *.vscode/
 
+# Plotpy generate .py
+*.py
+
 # Editor temporary files
 *.swp
 *.swo
