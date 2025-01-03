@@ -7,7 +7,7 @@ fn main() {
     // Generate an x range from -1000 nm to 1000 nm with 128 point. Since we need to do FFT of this 2^n points are very efficient
     let x_support = Array::linspace(-1000.0, 1000.0, 128);
     let dx: f64 = 2000.0 / 128 as f64; // Pixel size
-    // Define the binary mask transmission, 0 for outside of -250 to 250, 1 for inside and including
+    // Define the binary mask transmission, 0 for x outside of -125 to 125 and 1 for within that range
     let mask = x_support.map(|x_ref: &f64| {
         if (*x_ref).abs() < dot_size / 2.0 {
             1.0
