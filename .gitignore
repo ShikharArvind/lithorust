@@ -31,9 +31,6 @@ release/
 .cargo/config
 .cargo/registry/
 
-# Cargo lock
-.cargo/lock
-
 # IDE-specific files
 *.iml
 *.idea
