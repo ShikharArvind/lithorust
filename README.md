@@ -10,7 +10,10 @@ TODO
 
 ## Goals / TODO
 - [x] Implement basic mask 1-D transmission fuction
-- [ ] Calculate the Fourier transform of the mask fuction
+- [x] Calculate the Fourier transform of the mask function
+- [ ] Numeric implementation for Abbe method
+- [ ] Heavyside mask creation and check
+- [ ] Numeric implementation for Hopkins method
 - [ ] Write usage documentation when the project is remotely ready. 
 
 
