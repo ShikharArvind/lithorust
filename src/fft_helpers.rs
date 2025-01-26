@@ -13,6 +13,20 @@ pub fn fftshift1d<T: Clone>(x: &Array1<T>) -> Array1<T> {
     return  concatenate![Axis(0), right_side, left_side]; // Swap the right side to left and vice versa
 }
 
+
+// One-dimensional inverse FFT shift (swap left and right halves of the array back)
+pub fn ifftshift1d<T: Clone>(x: &Array1<T>) -> Array1<T> {
+    let len = x.len();
+    let mut middle_value = len / 2; // Default middle value for even-length arrays
+    if len % 2 != 0 {
+        middle_value = len / 2; // Floor of middle values for odd-length arrays
+    }
+    let left_side = x.slice(s![0..middle_value]);
+    let right_side = x.slice(s![middle_value..]);
+    return concatenate![Axis(0), right_side, left_side]; // Swap halves back
+}
+
+
 // Generate  Discrete Fourier Transform sample frequencies 1D 
 pub fn fftfreq(n: usize , d: f64) -> Array1<f64> {
     let spacing = 1.0 / ((n as f64 * d) );
